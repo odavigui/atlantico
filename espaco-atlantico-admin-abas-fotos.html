@@ -1,0 +1,1941 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espaço Atlântico — Eventos que ficam na memória</title>
+  <meta name="description" content="Espaço Atlântico: o lugar certo para casamentos, formaturas, festas corporativas e eventos únicos. Consulte datas disponíveis e faça seu orçamento.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ── Tokens ── */
+    :root {
+      --off:    #F2EAF9;
+      --off2:   #E8D8F5;
+      --line:   #CDB5E0;
+      --mid:    #8B6FAF;
+      --dark:   #4A1A6A;
+      --ink:    #2A0845;
+      --bronze: #7B2D8B;
+      --bronze2:#9B3DAB;
+      --purple-light: #EDD5F8;
+      --purple-mid:   #C490E0;
+      --white:  #FFFFFF;
+      --radius: 3px;
+      --max:    1160px;
+      --display: 'Cormorant Garamond', Georgia, serif;
+      --body:    'DM Sans', system-ui, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--body);
+      background: var(--off);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    a { text-decoration: none; color: inherit; }
+    img, svg { display: block; }
+    button { cursor: pointer; font-family: var(--body); border: none; background: none; }
+
+    .wrap { width: 92%; max-width: var(--max); margin: 0 auto; }
+    .rule { width: 100%; height: 1px; background: var(--line); }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      background: rgba(107,29,135,.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,.15);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 0;
+    }
+    .nav-logo {
+      font-family: var(--display);
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: .5px;
+    }
+    .nav-logo span { color: rgba(255,255,255,.75); }
+    .nav-links { display: none; align-items: center; gap: 34px; }
+    .nav-links a {
+      font-size: .82rem;
+      font-weight: 500;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.75);
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: #fff; }
+    .nav-links a.nav-cta {
+      display: inline-block;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: #5a1878 !important;
+      background: #ffffff;
+      padding: 10px 22px;
+      border-radius: var(--radius);
+      border: 2px solid #ffffff;
+      transition: background .2s, color .2s;
+    }
+    .nav-links a.nav-cta:hover { background: #EDD5F8; color: #4A1A6A !important; border-color: #EDD5F8; }
+    .burger { display: flex; flex-direction: column; gap: 5px; padding: 4px; }
+    .burger span { width: 24px; height: 1.5px; background: #fff; display: block; transition: .3s; }
+    .burger.open span:nth-child(1) { transform: rotate(45deg) translate(4.5px,4.5px); }
+    .burger.open span:nth-child(2) { opacity: 0; }
+    .burger.open span:nth-child(3) { transform: rotate(-45deg) translate(4.5px,-4.5px); }
+    .mob-menu {
+      display: none; flex-direction: column; gap: 0;
+      background: #5a1878; border-top: 1px solid rgba(255,255,255,.15);
+    }
+    .mob-menu.open { display: flex; }
+    .mob-menu a {
+      padding: 16px 4%;
+      font-size: .88rem; font-weight: 500; letter-spacing: 1.6px; text-transform: uppercase;
+      color: rgba(255,255,255,.85); border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+    @media(min-width: 860px) {
+      .nav-links { display: flex; }
+      .burger { display: none; }
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100svh;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center;
+      padding: 130px 4% 80px;
+      position: relative;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 85%, rgba(180,80,210,.25) 0%, transparent 70%),
+        #6B1D87;
+    }
+    .hero-eyebrow {
+      font-size: .74rem; font-weight: 500; letter-spacing: 3px; text-transform: uppercase;
+      color: #ffffff; margin-bottom: 28px;
+      display: flex; align-items: center; gap: 14px;
+    }
+    .hero-eyebrow::before, .hero-eyebrow::after {
+      content: ''; width: 36px; height: 1px; background: rgba(255,255,255,.6); display: inline-block;
+    }
+    .hero h1 {
+      font-family: var(--display);
+      font-size: clamp(3.6rem, 9vw, 7.2rem);
+      font-weight: 300;
+      line-height: 1.0;
+      letter-spacing: -1px;
+      color: var(--ink);
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--bronze);
+      font-weight: 300;
+    }
+    .hero-sub {
+      font-size: clamp(.95rem, 1.6vw, 1.08rem);
+      color: #ffffff;
+      max-width: 520px;
+      margin: 26px auto 40px;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+    .btn-dark {
+      font-size: .78rem; font-weight: 500; letter-spacing: 1.6px; text-transform: uppercase;
+      color: #5a1878; background: #ffffff;
+      padding: 14px 30px; border-radius: var(--radius);
+      font-weight: 700;
+      transition: background .2s, color .2s;
+    }
+    .btn-dark:hover { background: #EDD5F8; }
+    .btn-ghost {
+      font-size: .78rem; font-weight: 500; letter-spacing: 1.6px; text-transform: uppercase;
+      color: #ffffff; border: 2px solid #ffffff;
+      padding: 14px 30px; border-radius: var(--radius);
+      transition: border-color .2s, color .2s, background .2s;
+    }
+    .btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,.1); }
+    .hero-scroll {
+      position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      font-size: .7rem; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,.85);
+    }
+    .hero-scroll svg { animation: scrollBob 2s ease-in-out infinite; }
+    @keyframes scrollBob { 0%,100%{transform:translateY(0)} 50%{transform:translateY(6px)} }
+
+    /* ── HERO LOGO IMG ── */
+    .hero-logo-img {
+      margin-bottom: 16px;
+    }
+    .hero-logo-img img {
+      width: clamp(260px, 52vw, 500px);
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* ── SECTION HEADER ── */
+    .s-head { text-align: center; margin-bottom: 56px; }
+    .s-eyebrow {
+      font-size: .72rem; font-weight: 500; letter-spacing: 2.8px; text-transform: uppercase;
+      color: var(--bronze); margin-bottom: 14px;
+    }
+    .s-title {
+      font-family: var(--display);
+      font-size: clamp(2rem, 4vw, 2.9rem);
+      font-weight: 300;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+    .s-title em { font-style: italic; color: var(--bronze); }
+    .s-sub { font-size: .94rem; color: var(--mid); max-width: 500px; margin: 12px auto 0; font-weight: 300; }
+
+    /* ── SOBRE ── */
+    #sobre { padding: 100px 0; border-bottom: 1px solid var(--line); }
+    .sobre-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+    @media(min-width: 860px) { .sobre-grid { grid-template-columns: 1fr 1fr; } }
+    .sobre-text h2 {
+      font-family: var(--display);
+      font-size: clamp(2rem, 3.6vw, 2.7rem);
+      font-weight: 300;
+      line-height: 1.2;
+      margin-bottom: 22px;
+    }
+    .sobre-text h2 em { font-style: italic; color: var(--bronze); }
+    .sobre-text p { color: var(--mid); font-size: .97rem; font-weight: 300; margin-bottom: 14px; }
+    .sobre-nums {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      margin-top: 36px;
+    }
+    .sobre-num {
+      background: var(--off);
+      padding: 24px 20px;
+      text-align: center;
+    }
+    .sobre-num b {
+      display: block;
+      font-family: var(--display);
+      font-size: 2.4rem;
+      font-weight: 300;
+      color: var(--ink);
+      line-height: 1;
+    }
+    .sobre-num span { font-size: .76rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--mid); }
+    .sobre-img {
+      display: grid;
+      grid-template-rows: auto auto;
+      gap: 10px;
+    }
+    .img-placeholder {
+      background: var(--off2);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--line);
+      position: relative;
+      overflow: hidden;
+    }
+    .img-placeholder::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, transparent 40%, rgba(123,45,139,.06));
+    }
+    .img-placeholder svg { width: 36px; height: 36px; opacity: .35; }
+    .img-tall { height: 300px; }
+    .img-wide { height: 160px; }
+    .img-placeholder .img-label {
+      position: absolute; bottom: 14px; left: 14px;
+      font-size: .7rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--mid);
+    }
+    .sobre-img-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+    /* ── ESPAÇOS (galeria) ── */
+    #espacos { padding: 100px 0; border-bottom: 1px solid var(--line); }
+    .galeria {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    @media(min-width: 640px) { .galeria { grid-template-columns: repeat(2, 1fr); } }
+    @media(min-width: 980px) { .galeria { grid-template-columns: repeat(3, 1fr); } }
+    .galeria-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: var(--off2);
+      border: 1px solid var(--line);
+      cursor: pointer;
+    }
+    .galeria-item:first-child {
+      grid-column: 1 / -1;
+      height: 340px;
+    }
+    @media(min-width: 980px) { .galeria-item:first-child { grid-column: span 2; } }
+    .galeria-item:not(:first-child) { height: 220px; }
+    .galeria-inner {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--off2);
+      transition: transform .5s ease;
+    }
+    .galeria-item:hover .galeria-inner { transform: scale(1.03); }
+    .galeria-inner svg { width: 40px; height: 40px; color: var(--line); }
+    .galeria-cap {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 40px 20px 18px;
+      background: linear-gradient(to top, rgba(26,26,26,.75), transparent);
+      color: var(--white);
+    }
+    .galeria-cap b { display: block; font-family: var(--display); font-size: 1.18rem; font-weight: 400; }
+    .galeria-cap span { font-size: .74rem; letter-spacing: 1.5px; text-transform: uppercase; opacity: .7; }
+    .galeria-upload-hint {
+      text-align: center;
+      margin-top: 22px;
+      font-size: .8rem;
+      color: var(--mid);
+      letter-spacing: .5px;
+    }
+    .galeria-upload-hint a { color: var(--bronze); text-decoration: underline; }
+
+    /* ── AGENDA ── */
+    #agenda { padding: 100px 0; border-bottom: 1px solid var(--line); background: var(--off); }
+    .agenda-grid { display: grid; grid-template-columns: 1fr; gap: 48px; }
+    @media(min-width: 860px) { .agenda-grid { grid-template-columns: auto 1fr; gap: 64px; align-items: start; } }
+    .calendario {
+      min-width: 310px; max-width: 360px;
+      border: 1px solid var(--line); border-radius: var(--radius);
+      overflow: hidden; background: var(--white); user-select: none;
+    }
+    .cal-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 20px; border-bottom: 1px solid var(--line); background: var(--off);
+    }
+    .cal-header h3 { font-family: var(--display); font-size: 1.18rem; font-weight: 400; color: var(--ink); }
+    .cal-nav { display: flex; gap: 6px; }
+    .cal-nav button {
+      width: 32px; height: 32px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--mid); border: 1px solid var(--line);
+      transition: background .2s, color .2s; cursor: pointer; background: none;
+    }
+    .cal-nav button:hover { background: var(--off2); color: var(--ink); }
+    .cal-nav svg { width: 16px; height: 16px; }
+    .cal-days-header { display: grid; grid-template-columns: repeat(7, 38px); padding: 10px 12px 4px; justify-content: center; }
+    .cal-days-header span {
+      text-align: center; font-size: .68rem; letter-spacing: 1px;
+      text-transform: uppercase; color: var(--mid); font-weight: 500;
+    }
+    .cal-grid { display: grid; grid-template-columns: repeat(7, 38px); gap: 2px; padding: 6px 12px 14px; justify-content: center; }
+    .cal-day {
+      width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;
+      font-size: .86rem; border-radius: 50%; transition: background .15s, color .15s;
+      position: relative; color: var(--ink);
+    }
+    .cal-day.empty, .cal-day.past { pointer-events: none; }
+    .cal-day.past { opacity: .3; }
+    .cal-day.unavailable { color: var(--mid); }
+    /* DISPONÍVEL */
+    .cal-day.available { color: var(--ink); font-weight: 600; cursor: pointer; }
+    .cal-day.available::after {
+      content: ''; position: absolute; bottom: 3px; left: 50%; transform: translateX(-50%);
+      width: 4px; height: 4px; border-radius: 50%; background: var(--bronze);
+    }
+    .cal-day.available:hover { background: rgba(123,45,139,.15); }
+    /* SELECIONADO */
+    .cal-day.selected { background: var(--bronze) !important; color: var(--white) !important; }
+    .cal-day.selected::after { display: none; }
+    /* RESERVADO — riscado + fundo rosado */
+    .cal-day.reservado {
+      text-decoration: line-through; opacity: .55;
+      background: rgba(200,80,60,.08); color: #c85040; cursor: not-allowed;
+    }
+    /* INDISPONÍVEL genérico */
+    .cal-day.unavailable { opacity: .25; }
+    .cal-legend {
+      display: flex; flex-wrap: wrap; gap: 12px 20px; padding: 12px 20px;
+      border-top: 1px solid var(--line); background: var(--white);
+    }
+    .cal-legend span {
+      display: flex; align-items: center; gap: 7px;
+      font-size: .72rem; color: var(--mid);
+    }
+    .leg-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .leg-avail  { background: var(--bronze); }
+    .leg-taken  { background: rgba(200,80,60,.5); }
+
+    /* Lista de datas */
+    .agenda-info h3 { font-family: var(--display); font-size: 1.55rem; font-weight: 300; color: var(--ink); margin-bottom: 10px; }
+    .agenda-info > p { color: var(--mid); font-size: .94rem; font-weight: 300; margin-bottom: 24px; }
+    .datas-lista { display: flex; flex-direction: column; gap: 2px; margin-bottom: 28px; }
+    .data-item {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 18px; border: 1px solid var(--line); border-radius: var(--radius);
+      background: var(--off); transition: border-color .2s, background .2s; cursor: pointer;
+    }
+    .data-item:hover { border-color: var(--bronze); background: var(--white); }
+    .data-item.selected { border-color: var(--ink); background: var(--white); }
+    .data-item.reservado-item {
+      opacity: .55; cursor: not-allowed; pointer-events: none;
+      background: rgba(200,80,60,.04); border-color: rgba(200,80,60,.2);
+    }
+    .data-item-left { display: flex; align-items: center; gap: 14px; }
+    .data-badge {
+      width: 40px; height: 40px; border: 1px solid var(--line); border-radius: var(--radius);
+      display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--white);
+    }
+    .data-badge .d { font-family: var(--display); font-size: 1.1rem; font-weight: 400; line-height: 1; color: var(--ink); }
+    .data-badge .m { font-size: .56rem; letter-spacing: 1px; text-transform: uppercase; color: var(--mid); }
+    .data-desc b { display: block; font-size: .88rem; font-weight: 500; color: var(--ink); }
+    .data-desc span { font-size: .78rem; color: var(--mid); }
+    .data-tag {
+      font-size: .68rem; letter-spacing: 1px; text-transform: uppercase;
+      padding: 4px 10px; border-radius: 100px;
+    }
+    .data-tag.avail { background: rgba(139,115,85,.1); color: var(--bronze); }
+    .data-tag.taken { background: rgba(200,80,60,.1); color: #c85040; }
+    .no-dates { font-size: .9rem; color: var(--mid); font-style: italic; padding: 14px 0; }
+
+    /* ── ADMIN SCREEN (tela cheia via #admin) ── */
+    #admScreen {
+      display: none; position: fixed; inset: 0; z-index: 1000;
+      background: #f3f3f1; overflow-y: auto; flex-direction: column;
+    }
+    #admScreen.on { display: flex; }
+    .adm-topbar {
+      background: var(--ink); color: #fff; padding: 0;
+      position: sticky; top: 0; z-index: 10;
+    }
+    .adm-topbar-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 24px; max-width: 1000px; margin: 0 auto; width: 92%;
+    }
+    .adm-topbar-logo {
+      font-family: var(--display); font-size: 1.1rem; letter-spacing: .5px;
+    }
+    .adm-topbar-logo em { font-style: italic; color: var(--bronze); }
+    .adm-sair-btn {
+      font-size: .74rem; font-weight: 500; letter-spacing: 1.2px; text-transform: uppercase;
+      color: rgba(255,255,255,.7); background: none; border: 1px solid rgba(255,255,255,.25);
+      padding: 7px 16px; border-radius: var(--radius); cursor: pointer; transition: border-color .2s, color .2s;
+    }
+    .adm-sair-btn:hover { color: #fff; border-color: rgba(255,255,255,.6); }
+    .adm-wrap { width: 92%; max-width: 1000px; margin: 0 auto; padding: 36px 0 60px; }
+
+    /* Login */
+    .adm-login {
+      display: flex; align-items: center; justify-content: center;
+      min-height: calc(100vh - 60px); padding: 24px;
+    }
+    .adm-login-card {
+      background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 40px 36px; width: 100%; max-width: 380px;
+      display: flex; flex-direction: column; gap: 16px;
+    }
+    .adm-login-title {
+      font-family: var(--display); font-size: 1.6rem; font-weight: 300; color: var(--ink); margin-bottom: 4px;
+    }
+    .adm-login-sub { font-size: .82rem; color: var(--mid); margin-bottom: 8px; }
+    .adm-campo label {
+      display: block; font-size: .72rem; font-weight: 500; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--mid); margin-bottom: 6px;
+    }
+    .adm-campo input {
+      width: 100%; padding: 11px 13px; border: 1px solid var(--line); border-radius: var(--radius);
+      background: var(--off); font-family: var(--body); font-size: .92rem; color: var(--ink);
+      transition: border-color .2s;
+    }
+    .adm-campo input:focus { outline: none; border-color: var(--bronze); }
+    .adm-login-err { font-size: .8rem; color: #c85040; display: none; }
+    .adm-login-btn {
+      padding: 13px; background: var(--ink); color: var(--white); border: none;
+      border-radius: var(--radius); cursor: pointer; font-family: var(--body);
+      font-size: .78rem; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase;
+      transition: background .2s; margin-top: 4px;
+    }
+    .adm-login-btn:hover { background: #333; }
+
+    /* Abas */
+    .adm-tabs {
+      display: flex; gap: 0; border-bottom: 2px solid var(--line); margin-bottom: 32px;
+    }
+    .adm-tab {
+      font-size: .82rem; font-weight: 500; letter-spacing: 1px; text-transform: uppercase;
+      color: var(--mid); padding: 12px 22px; background: none; border: none; cursor: pointer;
+      border-bottom: 2px solid transparent; margin-bottom: -2px; transition: color .2s, border-color .2s;
+    }
+    .adm-tab.on { color: var(--ink); border-color: var(--bronze); }
+    .adm-pane { display: none; min-height: 260px; }
+    .adm-pane.on { display: block; }
+
+    /* Seção de conteúdo */
+    .adm-section { margin-bottom: 36px; }
+    .adm-section-head {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 16px;
+    }
+    .adm-section-title {
+      font-size: .72rem; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: var(--mid);
+    }
+    .adm-add-date { display: flex; gap: 10px; }
+    .adm-add-date input[type="date"] {
+      padding: 10px 13px; border: 1px solid var(--line); border-radius: var(--radius);
+      background: var(--white); font-family: var(--body); font-size: .9rem; color: var(--ink);
+    }
+    .adm-add-date input:focus { outline: none; border-color: var(--bronze); }
+    .adm-add-btn {
+      padding: 10px 20px; background: var(--bronze); color: var(--white); border: none;
+      border-radius: var(--radius); cursor: pointer; font-size: .78rem; font-weight: 500;
+      letter-spacing: 1px; text-transform: uppercase; transition: background .2s; white-space: nowrap;
+    }
+    .adm-add-btn:hover { background: var(--bronze2); }
+    .adm-add-err { font-size: .78rem; color: #c85040; margin-top: 6px; display: none; }
+
+    /* Tabela de datas */
+    .adm-table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+    .adm-table thead tr { border-bottom: 2px solid var(--line); }
+    .adm-table th {
+      font-size: .68rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--mid);
+      font-weight: 500; padding: 8px 12px; text-align: left;
+    }
+    .adm-table td { padding: 12px 12px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+    .adm-table tr:last-child td { border-bottom: none; }
+    .adm-table tr:hover td { background: var(--off); }
+    .adm-badge {
+      font-size: .68rem; letter-spacing: 1px; text-transform: uppercase;
+      padding: 3px 10px; border-radius: 100px; font-weight: 500;
+    }
+    .adm-badge.avail { background: rgba(123,45,139,.12); color: var(--bronze); }
+    .adm-badge.taken { background: rgba(200,80,60,.1); color: #c85040; }
+    .adm-row-btns { display: flex; gap: 6px; }
+    .adm-row-btn {
+      font-size: .7rem; padding: 5px 12px; border-radius: var(--radius);
+      border: 1px solid var(--line); cursor: pointer; background: none; color: var(--mid);
+      transition: color .2s, border-color .2s, background .2s;
+    }
+    .adm-row-btn:hover { color: var(--ink); border-color: var(--ink); }
+    .adm-row-btn.del { color: #c85040; border-color: rgba(200,80,60,.3); }
+    .adm-row-btn.del:hover { background: rgba(200,80,60,.1); border-color: #c85040; }
+    .adm-empty { font-size: .88rem; color: var(--mid); font-style: italic; padding: 20px 0; }
+
+    /* Cards de reserva */
+    .adm-cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap: 14px; }
+    .adm-reserva-card {
+      background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px;
+    }
+    .adm-reserva-card .rc-data {
+      font-family: var(--display); font-size: 1.1rem; color: var(--ink); margin-bottom: 8px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .adm-reserva-card .rc-info { font-size: .83rem; color: var(--mid); line-height: 1.7; }
+    .adm-reserva-card .rc-info b { color: var(--ink); }
+    .adm-reserva-card .rc-ts { font-size: .72rem; color: var(--mid); margin-top: 8px; opacity: .7; }
+
+    /* Métricas */
+    .adm-metrics { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px,1fr)); gap: 12px; margin-bottom: 28px; }
+    .adm-metric {
+      background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 18px 20px;
+    }
+    .adm-metric .mk { font-size: .7rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--mid); margin-bottom: 6px; }
+    .adm-metric .mv { font-family: var(--display); font-size: 1.8rem; font-weight: 300; color: var(--ink); }
+
+    /* ── FEEDBACK ── */
+    #feedback { padding: 100px 0; border-bottom: 1px solid var(--line); }
+    .feedback-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    @media(min-width: 640px) { .feedback-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media(min-width: 980px) { .feedback-grid { grid-template-columns: repeat(3, 1fr); } }
+    .fb-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px 26px;
+      display: flex; flex-direction: column; gap: 16px;
+      transition: box-shadow .25s, border-color .25s;
+    }
+    .fb-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,.06); border-color: var(--off2); }
+    .fb-stars { display: flex; gap: 3px; }
+    .fb-stars svg { width: 14px; height: 14px; fill: var(--bronze); }
+    .fb-text {
+      font-family: var(--display);
+      font-size: 1.08rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--dark);
+      line-height: 1.65;
+      flex: 1;
+    }
+    .fb-author { display: flex; align-items: center; gap: 12px; }
+    .fb-avatar {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: var(--off2); border: 1px solid var(--line);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--display); font-size: .95rem; color: var(--bronze); font-weight: 400;
+    }
+    .fb-name { font-size: .84rem; font-weight: 500; color: var(--ink); }
+    .fb-event { font-size: .76rem; color: var(--mid); }
+    .fb-featured {
+      grid-column: 1 / -1;
+      background: linear-gradient(135deg, #3d0f57 0%, #5a1878 100%);
+      border-color: #3d0f57;
+      color: var(--white);
+    }
+    .fb-featured .fb-text { color: #ffffff; font-size: 1.05rem; line-height: 1.8; }
+    .fb-featured .fb-stars svg { fill: #FFD700; }
+    .fb-featured .fb-name { color: var(--white); }
+    .fb-featured .fb-event { color: rgba(255,255,255,.9); }
+    .fb-featured .fb-avatar { background: rgba(255,255,255,.25); border-color: rgba(255,255,255,.4); color: #fff; font-weight: 700; }
+    .fb-featured .fb-q {
+      font-family: var(--display);
+      font-size: 4rem; line-height: .8; color: #fff; opacity: .5;
+    }
+
+    /* ── CONTATO ── */
+    #contato { padding: 100px 0; background: var(--off2); }
+    .contato-grid {
+      display: grid; grid-template-columns: 1fr;
+      gap: 56px;
+    }
+    @media(min-width: 860px) { .contato-grid { grid-template-columns: 1fr 1fr; align-items: start; } }
+    .contato-info h2 {
+      font-family: var(--display);
+      font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+      font-weight: 300; line-height: 1.2; margin-bottom: 18px;
+    }
+    .contato-info h2 em { font-style: italic; color: var(--bronze); }
+    .contato-info p { color: var(--mid); font-size: .94rem; font-weight: 300; margin-bottom: 32px; }
+    .info-items { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+    .info-item {
+      display: flex; align-items: center; gap: 16px;
+      padding: 18px 20px; border-bottom: 1px solid var(--line);
+      transition: background .2s;
+    }
+    .info-item:last-child { border-bottom: none; }
+    .info-item:hover { background: var(--off); }
+    .info-ic {
+      width: 38px; height: 38px; flex-shrink: 0;
+      border: 1px solid var(--line); border-radius: var(--radius);
+      display: flex; align-items: center; justify-content: center;
+      background: var(--off);
+    }
+    .info-ic svg { width: 17px; height: 17px; color: var(--bronze); }
+    .info-item b { display: block; font-size: .88rem; color: var(--ink); }
+    .info-item span { font-size: .8rem; color: var(--mid); }
+    .form-wrap { }
+    .form-wrap form { display: flex; flex-direction: column; gap: 14px; }
+    .frow { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .campo label {
+      display: block; font-size: .72rem; letter-spacing: 1.5px; text-transform: uppercase;
+      color: var(--mid); margin-bottom: 7px; font-weight: 500;
+    }
+    .campo input, .campo select, .campo textarea {
+      width: 100%; padding: 12px 14px;
+      border: 1px solid var(--line); border-radius: var(--radius);
+      background: var(--off); color: var(--ink);
+      font-family: var(--body); font-size: .92rem;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .campo input:focus, .campo select:focus, .campo textarea:focus {
+      outline: none; border-color: var(--bronze);
+      box-shadow: 0 0 0 3px rgba(123,45,139,.15);
+    }
+    .campo textarea { resize: vertical; min-height: 100px; }
+    .campo select { appearance: none; }
+    .data-selecionada-hint {
+      font-size: .8rem; color: var(--bronze); margin-top: -4px;
+    }
+    .form-submit {
+      font-size: .78rem; font-weight: 500; letter-spacing: 1.6px; text-transform: uppercase;
+      color: var(--white); background: var(--bronze);
+      padding: 15px 28px; border-radius: var(--radius);
+      transition: background .2s; width: 100%;
+    }
+    .form-submit:hover { background: var(--dark); }
+
+    /* ── MODAL ── */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0; z-index: 400;
+      background: rgba(26,26,26,.65); backdrop-filter: blur(4px);
+      align-items: center; justify-content: center; padding: 20px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal {
+      background: var(--off); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 40px 36px; max-width: 460px; width: 100%;
+      position: relative;
+      animation: modalIn .3s cubic-bezier(.22,1,.36,1);
+    }
+    @keyframes modalIn { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:none} }
+    .modal-close {
+      position: absolute; top: 16px; right: 16px;
+      width: 32px; height: 32px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--mid); border: 1px solid var(--line); transition: background .2s;
+    }
+    .modal-close:hover { background: var(--off2); }
+    .modal-close svg { width: 15px; height: 15px; }
+    .modal h3 { font-family: var(--display); font-size: 1.6rem; font-weight: 300; margin-bottom: 6px; }
+    .modal .modal-date { font-size: .8rem; color: var(--bronze); letter-spacing: 1px; margin-bottom: 22px; }
+    .modal form { display: flex; flex-direction: column; gap: 12px; }
+    .modal-submit {
+      font-size: .78rem; font-weight: 500; letter-spacing: 1.6px; text-transform: uppercase;
+      color: var(--white); background: var(--bronze);
+      padding: 13px; border-radius: var(--radius);
+      transition: background .2s; width: 100%; margin-top: 4px;
+    }
+    .modal-submit:hover { background: var(--dark); }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 48px 0 30px;
+      border-top: 1px solid var(--line);
+      background: var(--off);
+    }
+    .foot-inner {
+      display: flex; flex-direction: column; align-items: center;
+      gap: 18px; text-align: center;
+    }
+    .foot-logo {
+      font-family: var(--display); font-size: 1.3rem; font-weight: 300;
+      color: var(--ink); letter-spacing: .5px;
+    }
+    .foot-logo em { font-style: italic; color: var(--bronze); }
+    .foot-links { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; }
+    .foot-links a {
+      font-size: .75rem; letter-spacing: 1.5px; text-transform: uppercase;
+      color: var(--mid); transition: color .2s;
+    }
+    .foot-links a:hover { color: var(--ink); }
+    .foot-copy { font-size: .76rem; color: var(--mid); }
+    .foot-copy a { color: var(--bronze); }
+
+    /* ── WhatsApp FAB ── */
+    .wpp-fab {
+      position: fixed; bottom: 22px; right: 22px; z-index: 300;
+      width: 54px; height: 54px; border-radius: 50%;
+      background: #25d366;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 20px rgba(37,211,102,.4);
+      transition: transform .2s;
+    }
+    .wpp-fab:hover { transform: translateY(-3px) scale(1.05); }
+    .wpp-fab svg { width: 28px; height: 28px; fill: #fff; }
+
+    /* ── REVEAL ── */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s, transform .6s; }
+    .reveal.vis { opacity: 1; transform: none; }
+    @media(prefers-reduced-motion:reduce) { .reveal { opacity:1;transform:none;transition:none } }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="wrap nav-inner">
+      <a href="#topo" class="nav-logo"><img src="data:image/png;base64,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" alt="Espaço Atlântico" style="height:38px;width:auto;display:block;"></a>
+      <div class="nav-links">
+        <a href="#sobre">O espaço</a>
+        <a href="#espacos">Ambientes</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#feedback">Avaliações</a>
+        <a href="#contato" class="nav-cta">Reservar</a>
+      </div>
+      <button class="burger" id="burgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mob-menu" id="mobMenu">
+      <a href="#sobre" onclick="closeMob()">O espaço</a>
+      <a href="#espacos" onclick="closeMob()">Ambientes</a>
+      <a href="#agenda" onclick="closeMob()">Agenda</a>
+      <a href="#feedback" onclick="closeMob()">Avaliações</a>
+      <a href="#contato" onclick="closeMob()">Reservar</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="topo" class="hero">
+    <div class="hero-eyebrow">Macaé &middot; Rio de Janeiro</div>
+    <div class="hero-logo-img">
+      <img src="data:image/png;base64,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" alt="Espaço Atlântico">
+    </div>
+    <p class="hero-sub">O lugar certo para transformar cada celebração em uma memória inesquecível. Casamentos, formaturas, festas corporativas e muito mais.</p>
+    <div class="hero-btns">
+      <a href="#agenda" class="btn-dark">Ver datas disponíveis</a>
+      <a href="#espacos" class="btn-ghost">Conhecer o espaço</a>
+    </div>
+    <div class="hero-scroll">
+      <span>Descer</span>
+      <svg width="16" height="22" viewBox="0 0 16 22" fill="none">
+        <line x1="8" y1="0" x2="8" y2="18" stroke="#9A9793" stroke-width="1.2"/>
+        <path d="M3 13l5 6 5-6" stroke="#9A9793" stroke-width="1.2" fill="none"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="wrap">
+      <div class="sobre-grid">
+        <div class="sobre-text reveal">
+          <h2>Um ambiente para cada <em>celebração</em></h2>
+          <p>Com infraestrutura completa e localização privilegiada em Macaé, o Espaço Atlântico foi criado para receber eventos de todos os tamanhos com elegância e atenção a cada detalhe.</p>
+          <p>Da montagem ao encerramento, nossa equipe acompanha de perto para que você aproveite cada momento sem preocupações.</p>
+          <div class="sobre-nums">
+            <div class="sobre-num"><b>127</b><span>Eventos realizados</span></div>
+            <div class="sobre-num"><b>3</b><span>Anos no mercado</span></div>
+            <div class="sobre-num"><b>80</b><span>Capacidade de pessoas</span></div>
+            <div class="sobre-num"><b>4.8</b><span>Avaliação no Google</span></div>
+          </div>
+        </div>
+        <div class="sobre-img reveal">
+          <div class="img-placeholder img-tall">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9l5-5 4 4 3-3 6 6"/><circle cx="8.5" cy="7.5" r="1.5"/></svg>
+            <span class="img-label">Salão Principal</span>
+          </div>
+          <div class="sobre-img-row">
+            <div class="img-placeholder img-wide">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9l5-5 4 4 3-3 6 6"/></svg>
+              <span class="img-label">Área Gourmet</span>
+            </div>
+            <div class="img-placeholder img-wide">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9l5-5 4 4 3-3 6 6"/></svg>
+              <span class="img-label">Mezanino VIP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESPAÇOS -->
+  <div class="wrap" style="margin-top:12px;">
+  </div>
+  <section id="espacos">
+    <div class="wrap">
+      <div class="s-head reveal">
+        <div class="s-eyebrow">Ambientes</div>
+        <h2 class="s-title">Conheça nossos <em>espaços</em></h2>
+        <p class="s-sub">Ambientes versáteis para receber do íntimo ao grandioso.</p>
+      </div>
+      <div class="galeria reveal">
+        <div class="galeria-item">
+          <div class="galeria-inner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9l5-5 4 4 3-3 6 6"/><circle cx="8.5" cy="7.5" r="1.5"/></svg>
+          </div>
+          <div class="galeria-cap">
+            <b>Salão Principal</b>
+            <span>Capacidade até 80 pessoas</span>
+          </div>
+        </div>
+        <div class="galeria-item">
+          <div class="galeria-inner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9l5-5 4 4 3-3 6 6"/></svg>
+          </div>
+          <div class="galeria-cap">
+            <b>Área Gourmet Atlântico</b>
+            <span>Área ao ar livre · 200 m²</span>
+          </div>
+        </div>
+        <div class="galeria-item">
+          <div class="galeria-inner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9l5-5 4 4 3-3 6 6"/></svg>
+          </div>
+          <div class="galeria-cap">
+            <b>Mezanino VIP VIP</b>
+            <span>Até 50 pessoas · ambiente íntimo</span>
+          </div>
+        </div>
+        <div class="galeria-item">
+          <div class="galeria-inner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9l5-5 4 4 3-3 6 6"/></svg>
+          </div>
+          <div class="galeria-cap">
+            <b>Sala Corporativa</b>
+            <span>Reuniões e apresentações</span>
+          </div>
+        </div>
+        <div class="galeria-item">
+          <div class="galeria-inner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9l5-5 4 4 3-3 6 6"/></svg>
+          </div>
+          <div class="galeria-cap">
+            <b>Espaço Gourmet</b>
+            <span>Cozinha equipada · buffet</span>
+          </div>
+        </div>
+      </div>
+      <p class="galeria-upload-hint">As fotos dos espaços serão adicionadas em breve.</p>
+    </div>
+  </section>
+
+  <!-- AGENDA -->
+  <section id="agenda">
+    <div class="wrap">
+      <div class="s-head reveal">
+        <div class="s-eyebrow">Disponibilidade</div>
+        <h2 class="s-title"><em>Datas</em> disponíveis</h2>
+        <p class="s-sub">Clique em uma data disponível para solicitar sua reserva. Datas riscadas já estão ocupadas.</p>
+      </div>
+      <div class="agenda-grid">
+        <div class="reveal">
+          <div class="calendario">
+            <div class="cal-header">
+              <h3 id="calTitle">Junho 2026</h3>
+              <div class="cal-nav">
+                <button id="prevMes" aria-label="Mês anterior">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <button id="nextMes" aria-label="Próximo mês">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="cal-days-header">
+              <span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span>
+            </div>
+            <div class="cal-grid" id="calGrid"></div>
+            <div class="cal-legend">
+              <span><span class="leg-dot leg-avail"></span>Disponível</span>
+              <span><span class="leg-dot leg-taken"></span>Reservado</span>
+            </div>
+          </div>
+        </div>
+        <div class="agenda-info reveal">
+          <h3>Próximas datas</h3>
+          <p>Selecione uma data disponível no calendário ou na lista abaixo para solicitar sua reserva.</p>
+          <div class="datas-lista" id="datasLista"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEEDBACK -->
+  <section id="feedback">
+    <div class="wrap">
+      <div class="s-head reveal">
+        <div class="s-eyebrow">Avaliações</div>
+        <h2 class="s-title">O que dizem nossos <em>clientes</em></h2>
+        <p class="s-sub">Histórias reais de quem viveu momentos únicos no Espaço Atlântico.</p>
+      </div>
+      <div class="feedback-grid reveal">
+
+        <div class="fb-card fb-featured">
+          <div class="fb-q">&ldquo;</div>
+          <p class="fb-text">Nosso casamento foi realizado no Salão Principal e superou todas as expectativas. A equipe do Espaço Atlântico foi impecável do começo ao fim — atenciosa, pontual e sempre com um sorriso no rosto. O ambiente ficou exatamente como sonhamos.</p>
+          <div class="fb-author">
+            <div class="fb-avatar">A</div>
+            <div>
+              <div class="fb-name">Ana e Ricardo</div>
+              <div class="fb-event">Casamento · Março 2025</div>
+            </div>
+          </div>
+          <div class="fb-stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+        </div>
+
+        <div class="fb-card">
+          <div class="fb-stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="fb-text">"A formatura da minha filha foi inesquecível. O espaço é lindo, o staff é muito atencioso e o custo-benefício surpreendeu."</p>
+          <div class="fb-author">
+            <div class="fb-avatar">C</div>
+            <div>
+              <div class="fb-name">Claudia Mendes</div>
+              <div class="fb-event">Formatura · Dezembro 2024</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fb-card">
+          <div class="fb-stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="fb-text">"Realizamos nosso evento corporativo aqui e ficamos muito satisfeitos. Estrutura impecável e equipe super profissional."</p>
+          <div class="fb-author">
+            <div class="fb-avatar">R</div>
+            <div>
+              <div class="fb-name">Rafael Costa</div>
+              <div class="fb-event">Evento corporativo · Setembro 2024</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fb-card">
+          <div class="fb-stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="fb-text">"O aniversário de 15 anos da minha filha foi um sonho. O jardim é maravilhoso e a iluminação deixou tudo ainda mais especial."</p>
+          <div class="fb-author">
+            <div class="fb-avatar">P</div>
+            <div>
+              <div class="fb-name">Patrícia Lima</div>
+              <div class="fb-event">Festa de 15 anos · Julho 2024</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="wrap">
+      <div class="contato-grid">
+        <div class="contato-info reveal">
+          <h2>Vamos planejar seu <em>evento</em></h2>
+          <p>Preencha o formulário ou entre em contato pelo WhatsApp para verificar disponibilidade e receber um orçamento personalizado.</p>
+          <div class="info-items">
+            <div class="info-item">
+              <div class="info-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div><b>Rua Zelina Vasconcelos, SN, lote 51, quadra 32</b><span>Atlântico Norte, Macaé · RJ</span></div>
+            </div>
+            <div class="info-item">
+              <div class="info-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+              <div><b>(22) 99775-7560</b><span>Das 08:00 às 18:00</span></div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/></svg></div>
+              <div><b>@espaco.atlantico</b><span>Instagram</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="form-wrap reveal">
+          <form id="mainForm" novalidate>
+            <div class="frow">
+              <div class="campo">
+                <label for="f-nome">Nome</label>
+                <input type="text" id="f-nome" placeholder="Seu nome">
+              </div>
+              <div class="campo">
+                <label for="f-tel">WhatsApp</label>
+                <input type="tel" id="f-tel" placeholder="(00) 00000-0000">
+              </div>
+            </div>
+            <div class="campo">
+              <label for="f-email">E-mail</label>
+              <input type="email" id="f-email" placeholder="seu@email.com">
+            </div>
+            <div class="campo">
+              <label for="f-tipo">Tipo de evento</label>
+              <select id="f-tipo">
+                <option value="">Selecione...</option>
+                <option>Casamento</option>
+                <option>Formatura</option>
+                <option>Festa de aniversário</option>
+                <option>Evento corporativo</option>
+                <option>Confraternização</option>
+                <option>Outro</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="f-data">Data desejada</label>
+              <input type="text" id="f-data" placeholder="dd/mm/aaaa" id="f-data">
+              <p class="data-selecionada-hint" id="dataHint" style="display:none"></p>
+            </div>
+            <div class="campo">
+              <label for="f-pessoas">Número de convidados</label>
+              <select id="f-pessoas">
+                <option value="">Selecione...</option>
+                <option>Até 50 pessoas</option>
+                <option>51 a 80 pessoas</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="f-msg">Mensagem</label>
+              <textarea id="f-msg" placeholder="Conte um pouco sobre o evento que está planejando..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">Enviar via WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap foot-inner">
+      <div class="foot-logo">Espaço <em>Atlântico</em></div>
+      <div class="foot-links">
+        <a href="#sobre">O espaço</a>
+        <a href="#espacos">Ambientes</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#feedback">Avaliações</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <p class="foot-copy">© <span id="ano"></span> Espaço Atlântico · Macaé/RJ</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/5522997757560?text=Olá! Sou cliente e gostaria de falar sobre o Espaço Atlântico." target="_blank" rel="noopener" class="wpp-fab" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg>
+  </a>
+
+  <!-- MODAL RESERVA -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Fechar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <h3>Solicitar reserva</h3>
+      <p class="modal-date" id="modalDate">Data selecionada</p>
+      <form id="modalForm" novalidate>
+        <div class="campo">
+          <label>Nome completo *</label>
+          <input type="text" id="m-nome" placeholder="Seu nome completo">
+        </div>
+        <div class="campo">
+          <label>WhatsApp *</label>
+          <input type="tel" id="m-tel" placeholder="(00) 00000-0000">
+        </div>
+        <div class="campo">
+          <label>Tipo de evento</label>
+          <select id="m-tipo">
+            <option value="">Selecione...</option>
+            <option>Casamento</option>
+            <option>Formatura</option>
+            <option>Festa de aniversário</option>
+            <option>Evento corporativo</option>
+            <option>Confraternização</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label>Número de convidados</label>
+          <select id="m-convidados">
+            <option value="">Selecione...</option>
+            <option>Até 50 pessoas</option>
+                <option>51 a 80 pessoas</option>
+          </select>
+        </div>
+        <p id="m-erro" style="display:none;color:#c85040;font-size:.82rem;">Preencha nome e WhatsApp para continuar.</p>
+        <button type="submit" class="modal-submit">Confirmar via WhatsApp</button>
+        <p style="font-size:.74rem;color:var(--mid);text-align:center;margin-top:4px;">Sua solicitação será enviada e nossa equipe confirmará a disponibilidade em até 2h.</p>
+      </form>
+    </div>
+  </div>
+
+  
+  <div class="wrap" style="padding:24px 0;">
+    <div id="adminImagensBox" style="margin:16px 0;padding:16px;border:1px solid rgba(0,0,0,.08);border-radius:14px;background:#fff;">
+      <h3 style="margin:0 0 12px;">Imagens do site (ambientes)</h3>
+      <p style="margin:0 0 12px;color:#666;">Envie imagens para o Supabase Storage e use a URL pública no site.</p>
+      <div class="campo" style="margin-bottom:12px;">
+        <label>Nome do bucket</label>
+        <input type="text" id="sb-bucket" value="site-images" placeholder="site-images">
+      </div>
+      <div class="campo" style="margin-bottom:12px;">
+        <label>Enviar imagem</label>
+        <input type="file" id="sb-file" accept="image/*">
+      </div>
+      <div class="campo" style="margin-bottom:12px;">
+        <label>Caminho no bucket</label>
+        <input type="text" id="sb-path" value="admin/" placeholder="admin/">
+      </div>
+      <button type="button" id="sb-upload-btn" class="form-submit">Gerar upload para Supabase</button>
+      <p id="sb-result" style="margin-top:12px;font-size:.9rem;word-break:break-all;"></p>
+      <p style="margin-top:8px;font-size:.85rem;color:#666;">Depois de subir, salve a URL pública no seu banco ou use-a diretamente na imagem.</p>
+    </div>
+  </div>
+
+  <section style="margin:18px auto;max-width:1100px;padding:0 20px;">
+    <div style="background:#fff;border:1px solid #d9c3ea;border-radius:14px;padding:16px;box-shadow:0 6px 20px rgba(0,0,0,.04);">
+      <h3 style="margin:0 0 8px;">Fotos dos ambientes</h3>
+      <p style="margin:0 0 12px;color:#666;">Adicione fotos para cada ambiente e use a URL no site.</p>
+      <div class="campo" style="margin-bottom:12px;">
+        <label>Ambiente</label>
+        <select id="photo-ambiente">
+          <option>Salão Principal</option>
+          <option>Área Gourmet</option>
+          <option>Espaço Kids</option>
+          <option>Mezanino VIP</option>
+          <option>Entrada Principal</option>
+        </select>
+      </div>
+      <div class="campo" style="margin-bottom:12px;">
+        <label>Foto</label>
+        <input type="file" id="photo-file" accept="image/*">
+      </div>
+      <div class="campo" style="margin-bottom:12px;">
+        <label>Bucket do Supabase</label>
+        <input type="text" id="photo-bucket" value="site-images" placeholder="site-images">
+      </div>
+      <div class="campo" style="margin-bottom:12px;">
+        <label>Pasta no bucket</label>
+        <input type="text" id="photo-folder" value="ambientes" placeholder="ambientes">
+      </div>
+      <button type="button" id="photo-generate" class="form-submit">Gerar caminho da foto</button>
+      <p id="photo-output" style="margin-top:10px;font-size:.92rem;word-break:break-all;"></p>
+      <p style="margin-top:8px;font-size:.85rem;color:#666;">Depois do upload no Supabase, cole a URL pública aqui e salve no site.</p>
+    </div>
+  </section>
+<!-- FOOTER -->
+  <footer>
+    <div class="wrap foot-inner">
+      <div class="foot-logo">Espaço <em>Atlântico</em></div>
+      <div class="foot-links">
+        <a href="#sobre">O espaço</a>
+        <a href="#espacos">Ambientes</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#feedback">Avaliações</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <p class="foot-copy">© <span id="ano"></span> Espaço Atlântico · Macaé/RJ</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/5522997757560?text=Olá! Sou cliente e gostaria de falar sobre o Espaço Atlântico." target="_blank" rel="noopener" class="wpp-fab" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg>
+  </a>
+
+  <!-- MODAL RESERVA -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Fechar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <h3>Solicitar reserva</h3>
+      <p class="modal-date" id="modalDate">Data selecionada</p>
+      <form id="modalForm" novalidate>
+        <div class="campo">
+          <label>Nome completo *</label>
+          <input type="text" id="m-nome" placeholder="Seu nome completo">
+        </div>
+        <div class="campo">
+          <label>WhatsApp *</label>
+          <input type="tel" id="m-tel" placeholder="(00) 00000-0000">
+        </div>
+        <div class="campo">
+          <label>Tipo de evento</label>
+          <select id="m-tipo">
+            <option value="">Selecione...</option>
+            <option>Casamento</option>
+            <option>Formatura</option>
+            <option>Festa de aniversário</option>
+            <option>Evento corporativo</option>
+            <option>Confraternização</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label>Número de convidados</label>
+          <select id="m-convidados">
+            <option value="">Selecione...</option>
+            <option>Até 50 pessoas</option>
+                <option>51 a 80 pessoas</option>
+          </select>
+        </div>
+        <p id="m-erro" style="display:none;color:#c85040;font-size:.82rem;">Preencha nome e WhatsApp para continuar.</p>
+        <button type="submit" class="modal-submit">Confirmar via WhatsApp</button>
+        <p style="font-size:.74rem;color:var(--mid);text-align:center;margin-top:4px;">Sua solicitação será enviada e nossa equipe confirmará a disponibilidade em até 2h.</p>
+      </form>
+    </div>
+  </div>
+
+  
+  <div class="wrap" style="padding:24px 0;">
+    <div id="adminImagensBox" style="margin:16px 0;padding:16px;border:1px solid rgba(0,0,0,.08);border-radius:14px;background:#fff;">
+      <h3 style="margin:0 0 12px;">Imagens do site (ambientes)</h3>
+      <p style="margin:0 0 12px;color:#666;">Envie imagens para o Supabase Storage e use a URL pública no site.</p>
+      <div class="campo" style="margin-bottom:12px;">
+        <label>Nome do bucket</label>
+        <input type="text" id="sb-bucket" value="site-images" placeholder="site-images">
+      </div>
+      <div class="campo" style="margin-bottom:12px;">
+        <label>Enviar imagem</label>
+        <input type="file" id="sb-file" accept="image/*">
+      </div>
+      <div class="campo" style="margin-bottom:12px;">
+        <label>Caminho no bucket</label>
+        <input type="text" id="sb-path" value="admin/" placeholder="admin/">
+      </div>
+      <button type="button" id="sb-upload-btn" class="form-submit">Gerar upload para Supabase</button>
+      <p id="sb-result" style="margin-top:12px;font-size:.9rem;word-break:break-all;"></p>
+      <p style="margin-top:8px;font-size:.85rem;color:#666;">Depois de subir, salve a URL pública no seu banco ou use-a diretamente na imagem.</p>
+    </div>
+  </div>
+
+  <section style="margin:18px auto;max-width:1100px;padding:0 20px;">
+    <div style="background:#fff;border:1px solid #d9c3ea;border-radius:14px;padding:16px;box-shadow:0 6px 20px rgba(0,0,0,.04);">
+      <h3 style="margin:0 0 8px;">Gerenciar imagens dos ambientes</h3>
+      <p style="margin:0 0 12px;color:#666;">Use esta área para cadastrar as fotos de cada ambiente no painel admin.</p>
+      <button type="button" id="openImagesAdmin" class="form-submit">Abrir área de imagens</button>
+    </div>
+  </section>
+<!-- ADMIN SCREEN — abre com #admin na URL -->
+  <div id="admScreen">
+    <!-- TOPBAR -->
+    <div class="adm-topbar">
+      <div class="adm-topbar-inner">
+        <div class="adm-topbar-logo">Espaço <em>Atlântico</em> · Painel</div>
+        <button class="adm-sair-btn" id="admSairBtn">Sair</button>
+      </div>
+    </div>
+
+    <!-- LOGIN -->
+    <div class="adm-login" id="admLogin">
+      <div class="adm-login-card">
+        <div class="adm-login-title">Área administrativa</div>
+        <p class="adm-login-sub">Gerencie datas, reservas e solicitações do Espaço Atlântico.</p>
+        <div class="adm-campo">
+          <label>Login</label>
+          <input type="text" id="admLoginInput" type="email" placeholder="seu@email.com" autocomplete="email">
+        </div>
+        <div class="adm-campo">
+          <label>Senha</label>
+          <input type="password" id="admSenhaInput" placeholder="••••••••" autocomplete="current-password">
+        </div>
+        <p class="adm-login-err" id="admLoginErr">Login ou senha incorretos.</p>
+        <button class="adm-login-btn" id="admEntrarBtn">Entrar no painel</button>
+      </div>
+    </div>
+
+    <!-- APP (após login) -->
+    <div class="adm-wrap" id="admApp" style="display:none">
+      <div class="adm-tabs">
+        <button class="adm-tab on" data-pane="agenda">Agenda</button>
+        <button class="adm-tab" data-pane="reservas">Solicitações</button>
+      </div>
+
+      <!-- PANE AGENDA -->
+      <div class="adm-pane on" id="paneAgenda">
+        <div class="adm-metrics" id="admMetrics"></div>
+        <div class="adm-section">
+          <div class="adm-section-head">
+            <div class="adm-section-title">Adicionar data disponível</div>
+          </div>
+          <div class="adm-add-date">
+            <input type="date" id="admNovaData">
+            <button class="adm-add-btn" id="admAddBtn">+ Adicionar</button>
+          </div>
+          <p class="adm-add-err" id="admAddErr"></p>
+        </div>
+        <div class="adm-section">
+          <div class="adm-section-head">
+            <div class="adm-section-title">Datas cadastradas</div>
+          </div>
+          <table class="adm-table">
+            <thead><tr><th>Data</th><th>Dia da semana</th><th>Status</th><th>Ações</th></tr></thead>
+            <tbody id="admDatasBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- PANE RESERVAS -->
+      <div class="adm-pane" id="paneReservas">
+        <div class="adm-section">
+          <div class="adm-section-head">
+            <div class="adm-section-title">Solicitações de reserva recebidas</div>
+          </div>
+          <div class="adm-cards-grid" id="admReservasGrid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+
+    // — Mobile menu —
+    const burger = document.getElementById('burgerBtn');
+    const mobMenu = document.getElementById('mobMenu');
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('open');
+      mobMenu.classList.toggle('open');
+    });
+    function closeMob() {
+      burger.classList.remove('open');
+      mobMenu.classList.remove('open');
+    }
+
+    // Datas iniciais (dd/mm/aaaa). Após publicar, gerencie pelo
+    // painel administrativo (botão no final da seção de agenda).
+    // ═══════════════════════════════════════════════════════════
+    const DATAS_INICIAIS = [
+      '11/06/2026','12/06/2026','13/06/2026','14/06/2026','15/06/2026','16/06/2026','17/06/2026',
+      '18/06/2026','19/06/2026','20/06/2026','21/06/2026','22/06/2026','23/06/2026','24/06/2026',
+      '25/06/2026','26/06/2026','27/06/2026','28/06/2026','29/06/2026','30/06/2026','01/07/2026',
+      '02/07/2026','03/07/2026','04/07/2026','05/07/2026','06/07/2026','07/07/2026','08/07/2026',
+      '09/07/2026','10/07/2026','11/07/2026','12/07/2026','13/07/2026','14/07/2026','15/07/2026',
+      '16/07/2026','17/07/2026','18/07/2026','19/07/2026','20/07/2026','21/07/2026','22/07/2026',
+      '23/07/2026','24/07/2026','25/07/2026','26/07/2026','27/07/2026','28/07/2026','29/07/2026',
+      '30/07/2026','31/07/2026','01/08/2026','02/08/2026','03/08/2026','04/08/2026','05/08/2026',
+      '06/08/2026','07/08/2026','08/08/2026','09/08/2026','10/08/2026','11/08/2026','12/08/2026',
+      '13/08/2026','14/08/2026','15/08/2026','16/08/2026','17/08/2026','18/08/2026','19/08/2026',
+      '20/08/2026','21/08/2026','22/08/2026','23/08/2026','24/08/2026','25/08/2026','26/08/2026',
+      '27/08/2026','28/08/2026','29/08/2026','30/08/2026','31/08/2026','01/09/2026','02/09/2026',
+      '03/09/2026','04/09/2026','05/09/2026','06/09/2026','07/09/2026','08/09/2026','09/09/2026',
+      '10/09/2026','11/09/2026','12/09/2026','13/09/2026','14/09/2026','15/09/2026','16/09/2026',
+      '17/09/2026','18/09/2026','19/09/2026','20/09/2026','21/09/2026','22/09/2026','23/09/2026',
+      '24/09/2026','25/09/2026','26/09/2026','27/09/2026','28/09/2026','29/09/2026','30/09/2026',
+      '01/10/2026','02/10/2026','03/10/2026','04/10/2026','05/10/2026','06/10/2026','07/10/2026',
+      '08/10/2026','09/10/2026','10/10/2026','11/10/2026','12/10/2026','13/10/2026','14/10/2026',
+      '15/10/2026','16/10/2026','17/10/2026','18/10/2026','19/10/2026','20/10/2026','21/10/2026',
+      '22/10/2026','23/10/2026','24/10/2026','25/10/2026','26/10/2026','27/10/2026','28/10/2026',
+      '29/10/2026','30/10/2026','31/10/2026','01/11/2026','02/11/2026','03/11/2026','04/11/2026',
+      '05/11/2026','06/11/2026','07/11/2026','08/11/2026','09/11/2026','10/11/2026','11/11/2026',
+      '12/11/2026','13/11/2026','14/11/2026','15/11/2026','16/11/2026','17/11/2026','18/11/2026',
+      '19/11/2026','20/11/2026','21/11/2026','22/11/2026','23/11/2026','24/11/2026','25/11/2026',
+      '26/11/2026','27/11/2026','28/11/2026','29/11/2026','30/11/2026','01/12/2026','02/12/2026',
+      '03/12/2026','04/12/2026','05/12/2026','06/12/2026','07/12/2026','08/12/2026','09/12/2026',
+      '10/12/2026','11/12/2026','12/12/2026','13/12/2026','14/12/2026','15/12/2026','16/12/2026',
+      '17/12/2026','18/12/2026','19/12/2026','20/12/2026','21/12/2026','22/12/2026','23/12/2026',
+      '24/12/2026','25/12/2026','26/12/2026','27/12/2026','28/12/2026','29/12/2026','30/12/2026',
+      '31/12/2026',
+    ];
+
+    // ─── Autenticação via Supabase Auth ──────────────────────
+    const SUPABASE_URL  = 'https://wmjtzsyjdiwzvuporibj.supabase.co';
+    const SUPABASE_ANON = 'sb_publishable_lmRXuLy0Z91TzofOJ-KFag_Nd-ol8me';
+    // ─────────────────────────────────────────────────────────
+
+    const STORAGE_DATAS     = 'ea_datas';
+    const STORAGE_RESERVAS  = 'ea_reservas';
+    const STORAGE_BLOQUEIOS = 'ea_bloqueios'; // datas marcadas como reservadas pelo admin
+
+    // Carrega do localStorage, inicializa se vazio
+    const STORAGE_VERSAO = 'ea_versao';
+    const VERSAO_ATUAL   = 'e510e366';
+
+    // Se a versão das datas mudou (admin atualizou o código), reseta o storage
+    (function() {
+      if (localStorage.getItem(STORAGE_VERSAO) !== VERSAO_ATUAL) {
+        localStorage.setItem(STORAGE_DATAS,     JSON.stringify(DATAS_INICIAIS));
+        localStorage.setItem(STORAGE_BLOQUEIOS, JSON.stringify([]));
+        localStorage.setItem(STORAGE_VERSAO,    VERSAO_ATUAL);
+      }
+    })();
+
+    function getDatas() {
+      const raw = localStorage.getItem(STORAGE_DATAS);
+      if (!raw) { localStorage.setItem(STORAGE_DATAS, JSON.stringify(DATAS_INICIAIS)); return [...DATAS_INICIAIS]; }
+      return JSON.parse(raw);
+    }
+    function saveDatas(arr) { localStorage.setItem(STORAGE_DATAS, JSON.stringify(arr)); }
+
+    function getReservas() {
+      const raw = localStorage.getItem(STORAGE_RESERVAS);
+      return raw ? JSON.parse(raw) : [];
+    }
+    function saveReservas(arr) { localStorage.setItem(STORAGE_RESERVAS, JSON.stringify(arr)); }
+
+    function getBloqueios() {
+      const raw = localStorage.getItem(STORAGE_BLOQUEIOS);
+      return raw ? JSON.parse(raw) : [];
+    }
+    function saveBloqueios(arr) { localStorage.setItem(STORAGE_BLOQUEIOS, JSON.stringify(arr)); }
+
+    // Uma data está "reservada" se o admin a bloqueou
+    function isReservada(dataStr) { return getBloqueios().includes(dataStr); }
+    // Uma data está "disponível" se está na lista e NÃO está bloqueada
+    function isDisponivel(dataStr) { return getDatas().includes(dataStr) && !isReservada(dataStr); }
+
+    // ─── Calendário ──────────────────────────────────────────
+    const MESES = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+    const hoje = new Date();
+    let mesAtual = hoje.getMonth();
+    let anoAtual = hoje.getFullYear();
+    let dataSelecionada = null;
+
+    function renderCal() {
+      const grid  = document.getElementById('calGrid');
+      const title = document.getElementById('calTitle');
+      grid.innerHTML = '';
+      title.textContent = `${MESES[mesAtual]} ${anoAtual}`;
+
+      const primeiroDia = new Date(anoAtual, mesAtual, 1).getDay();
+      const diasNoMes   = new Date(anoAtual, mesAtual + 1, 0).getDate();
+      const hojeBase    = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate());
+
+      for (let i = 0; i < primeiroDia; i++) {
+        const el = document.createElement('div');
+        el.className = 'cal-day empty'; grid.appendChild(el);
+      }
+
+      for (let d = 1; d <= diasNoMes; d++) {
+        const el  = document.createElement('div');
+        el.className = 'cal-day';
+        el.textContent = d;
+
+        const data = new Date(anoAtual, mesAtual, d);
+        const dd   = String(d).padStart(2,'0');
+        const mm   = String(mesAtual + 1).padStart(2,'0');
+        const dataStr = `${dd}/${mm}/${anoAtual}`;
+
+        if (data < hojeBase) {
+          el.classList.add('past');
+        } else if (isReservada(dataStr)) {
+          el.classList.add('reservado');
+          el.title = 'Data já reservada';
+        } else if (getDatas().includes(dataStr)) {
+          el.classList.add('available');
+          if (dataSelecionada === dataStr) el.classList.add('selected');
+          el.addEventListener('click', () => selecionarData(dataStr));
+        } else {
+          el.classList.add('unavailable');
+        }
+        grid.appendChild(el);
+      }
+    }
+
+    function selecionarData(dataStr) {
+      dataSelecionada = dataStr;
+      renderCal();
+      renderLista();
+
+      // Preenche o campo de data no form principal
+      const fData = document.getElementById('f-data');
+      if (fData) { fData.value = dataStr; }
+      const hint = document.getElementById('dataHint');
+      if (hint) { hint.style.display = 'block'; hint.textContent = `Data selecionada: ${dataStr}`; }
+
+      // Abre modal
+      document.getElementById('modalDate').textContent = `Data: ${dataStr}`;
+      document.getElementById('modalOverlay').classList.add('open');
+    }
+
+    document.getElementById('prevMes').addEventListener('click', () => {
+      mesAtual--; if (mesAtual < 0) { mesAtual = 11; anoAtual--; } renderCal();
+    });
+    document.getElementById('nextMes').addEventListener('click', () => {
+      mesAtual++; if (mesAtual > 11) { mesAtual = 0; anoAtual++; } renderCal();
+    });
+
+    // ─── Lista lateral de datas ──────────────────────────────
+    function renderLista() {
+      const lista   = document.getElementById('datasLista');
+      lista.innerHTML = '';
+      const todas   = getDatas();
+      const bloq    = getBloqueios();
+      const hojeBase= new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate());
+
+      // Filtra só futuras, ordena por data
+      const futuras = todas.filter(ds => {
+        const [d,m,y] = ds.split('/').map(Number);
+        return new Date(y, m-1, d) >= hojeBase;
+      }).sort((a,b) => {
+        const [d1,m1,y1]=a.split('/').map(Number), [d2,m2,y2]=b.split('/').map(Number);
+        return new Date(y1,m1-1,d1) - new Date(y2,m2-1,d2);
+      }).slice(0, 8);
+
+      if (!futuras.length) {
+        lista.innerHTML = '<p class="no-dates">Nenhuma data disponível no momento. Entre em contato pelo WhatsApp.</p>';
+        return;
+      }
+
+      futuras.forEach(dataStr => {
+        const [d,m,y] = dataStr.split('/');
+        const nomeMes = MESES[+m-1].substring(0,3);
+        const reservada = bloq.includes(dataStr);
+
+        const item = document.createElement('div');
+        item.className = 'data-item' + (reservada ? ' reservado-item' : '') + (dataSelecionada === dataStr ? ' selected' : '');
+
+        item.innerHTML = `
+          <div class="data-item-left">
+            <div class="data-badge">
+              <div class="d">${d}</div>
+              <div class="m">${nomeMes}</div>
+            </div>
+            <div class="data-desc">
+              <b>${reservada ? 'Reservado' : 'Disponível'}</b>
+              <span>${y}</span>
+            </div>
+          </div>
+          <span class="data-tag ${reservada ? 'taken' : 'avail'}">${reservada ? 'Ocupado' : 'Livre'}</span>`;
+
+        if (!reservada) {
+          item.addEventListener('click', () => selecionarData(dataStr));
+        }
+        lista.appendChild(item);
+      });
+    }
+
+    renderCal();
+    renderLista();
+
+    // ─── Modal de reserva ────────────────────────────────────
+    document.getElementById('modalClose').addEventListener('click', () => {
+      document.getElementById('modalOverlay').classList.remove('open');
+    });
+    document.getElementById('modalOverlay').addEventListener('click', e => {
+      if (e.target === document.getElementById('modalOverlay'))
+        document.getElementById('modalOverlay').classList.remove('open');
+    });
+
+    document.getElementById('modalForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const nome  = document.getElementById('m-nome').value.trim();
+      const tel   = document.getElementById('m-tel').value.trim();
+      const tipo  = document.getElementById('m-tipo').value;
+      const conv  = document.getElementById('m-convidados').value;
+      const data  = dataSelecionada;
+      const erro  = document.getElementById('m-erro');
+
+      if (!nome || !tel) { erro.style.display = 'block'; return; }
+      erro.style.display = 'none';
+
+      // Salva a solicitação localmente (para o admin ver)
+      const reservas = getReservas();
+      reservas.push({ data, nome, tel, tipo, conv, ts: new Date().toISOString() });
+      saveReservas(reservas);
+
+      // Monta mensagem do WhatsApp
+      let txt = `*Solicitação de Reserva — Espaço Atlântico*
+
+Olá! Gostaria de solicitar uma reserva e receber mais informações sobre disponibilidade e valores.
+
+Data desejada: ${data}
+Nome: ${nome}
+WhatsApp: ${tel}`;
+      if (tipo) txt += `
+Tipo de evento: ${tipo}`;
+      if (conv) txt += `
+Número de convidados: ${conv}`;
+      const msg = (document.getElementById('f-msg')?.value || '').trim();
+      if (msg) txt += `
+Mensagem: ${msg}`;
+      window.open(`https://wa.me/5522997757560?text=${encodeURIComponent(txt)}`, '_blank');
+
+      document.getElementById('modalOverlay').classList.remove('open');
+      document.getElementById('modalForm').reset();
+
+      // Exibe confirmação leve
+      alert(`✅ Solicitação enviada para ${data}!
+
+Nossa equipe confirmará sua reserva em até 2 horas pelo WhatsApp.`);
+    });
+
+    // ═══════════════════════════════════════════════════════════
+    // PAINEL ADMIN — abre via #admin na URL (igual ao CORA)
+    // ═══════════════════════════════════════════════════════════
+    const DIAS_SEMANA_ADM = ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'];
+    let admLogado = false;
+
+    const admScreen = document.getElementById('admScreen');
+    const admLogin  = document.getElementById('admLogin');
+    const admApp    = document.getElementById('admApp');
+
+    function checarHash() {
+      if (location.hash.toLowerCase() === '#admin') {
+        admScreen.classList.add('on');
+        document.body.style.overflow = 'hidden';
+        if (admLogado) mostrarApp(); else mostrarLogin();
+      } else {
+        admScreen.classList.remove('on');
+        document.body.style.overflow = '';
+      }
+    }
+    window.addEventListener('hashchange', checarHash);
+    checarHash(); // verifica no load
+
+    function mostrarLogin() { admLogin.style.display = 'flex'; admApp.style.display = 'none'; }
+    function mostrarApp()   { admLogin.style.display = 'none'; admApp.style.display = 'block'; renderAdminDatas(); renderAdminReservas(); renderAdminMetrics(); }
+
+    // Login
+    document.getElementById('admEntrarBtn').addEventListener('click', fazerLogin);
+    document.getElementById('admLoginInput').addEventListener('keydown', e => { if (e.key === 'Enter') fazerLogin(); });
+    document.getElementById('admSenhaInput').addEventListener('keydown', e => { if (e.key === 'Enter') fazerLogin(); });
+
+    async function fazerLogin() {
+      const email = document.getElementById('admLoginInput').value.trim();
+      const senha = document.getElementById('admSenhaInput').value;
+      const err   = document.getElementById('admLoginErr');
+      const btn   = document.getElementById('admEntrarBtn');
+      btn.disabled = true;
+      btn.textContent = 'Entrando...';
+      try {
+        const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm');
+        const sb = createClient(SUPABASE_URL, SUPABASE_ANON);
+        const { error } = await sb.auth.signInWithPassword({ email, password: senha });
+        if (error) throw error;
+        err.style.display = 'none';
+        admLogado = true;
+        mostrarApp();
+      } catch (e) {
+        err.style.display = 'block';
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Entrar no painel';
+      }
+    }
+
+    // Sair
+    document.getElementById('admSairBtn').addEventListener('click', async () => {
+      const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm');
+      const sb = createClient(SUPABASE_URL, SUPABASE_ANON);
+      await sb.auth.signOut();
+      admLogado = false;
+      document.getElementById('admSenhaInput').value = '';
+      location.hash = '';
+    });
+
+    // Abas
+    admScreen.querySelectorAll('.adm-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        admScreen.querySelectorAll('.adm-tab').forEach(t => t.classList.remove('on'));
+        admScreen.querySelectorAll('.adm-pane').forEach(p => p.classList.remove('on'));
+        tab.classList.add('on');
+        const paneId = tab.dataset.pane === 'agenda' ? 'paneAgenda' : 'paneReservas';
+        const pane = admScreen.querySelector('#' + paneId);
+        if (pane) pane.classList.add('on');
+        if (tab.dataset.pane === 'reservas') renderAdminReservas();
+        if (tab.dataset.pane === 'agenda') { renderAdminDatas(); renderAdminMetrics(); }
+      });
+    });
+
+    renderAdminDatas();
+    renderAdminReservas();
+    renderAdminMetrics();
+
+    // Input de data — mínimo hoje
+    (function(){
+      const input = document.getElementById('admNovaData');
+      const t = new Date();
+      input.min = `${t.getFullYear()}-${String(t.getMonth()+1).padStart(2,'0')}-${String(t.getDate()).padStart(2,'0')}`;
+    })();
+
+    // Adicionar data
+    document.getElementById('admAddBtn').addEventListener('click', () => {
+      const input  = document.getElementById('admNovaData');
+      const errEl  = document.getElementById('admAddErr');
+      if (!input.value) { errEl.textContent = 'Selecione uma data.'; errEl.style.display = 'block'; return; }
+      const [y,m,d] = input.value.split('-');
+      const dataStr = `${d}/${m}/${y}`;
+      const datas   = getDatas();
+      if (datas.includes(dataStr)) { errEl.textContent = 'Data já cadastrada.'; errEl.style.display = 'block'; return; }
+      errEl.style.display = 'none';
+      datas.push(dataStr);
+      saveDatas(datas);
+      input.value = '';
+      renderAdminDatas();
+      renderAdminMetrics();
+      renderCal();
+      renderLista();
+    });
+
+    function renderAdminMetrics() {
+      const datas  = getDatas();
+      const bloq   = getBloqueios();
+      const reservas = getReservas();
+      const hojeBase = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate());
+      const disponiveis = datas.filter(ds => {
+        const [d,m,y] = ds.split('/').map(Number);
+        return new Date(y,m-1,d) >= hojeBase && !bloq.includes(ds);
+      }).length;
+      const reservadas = bloq.length;
+      document.getElementById('admMetrics').innerHTML = `
+        <div class="adm-metric"><div class="mk">Datas cadastradas</div><div class="mv">${datas.length}</div></div>
+        <div class="adm-metric"><div class="mk">Disponíveis</div><div class="mv">${disponiveis}</div></div>
+        <div class="adm-metric"><div class="mk">Reservadas</div><div class="mv">${reservadas}</div></div>
+        <div class="adm-metric"><div class="mk">Solicitações</div><div class="mv">${reservas.length}</div></div>`;
+    }
+
+    function renderAdminDatas() {
+      const datas    = getDatas();
+      const bloq     = getBloqueios();
+      const hojeBase = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate());
+      const sorted   = [...datas].sort((a,b) => {
+        const [d1,m1,y1]=a.split('/').map(Number), [d2,m2,y2]=b.split('/').map(Number);
+        return new Date(y1,m1-1,d1) - new Date(y2,m2-1,d2);
+      });
+      const tbody = document.getElementById('admDatasBody');
+      tbody.innerHTML = '';
+      if (!sorted.length) {
+        tbody.innerHTML = '<tr><td colspan="4" class="adm-empty">Nenhuma data cadastrada ainda.</td></tr>';
+        return;
+      }
+      sorted.forEach(dataStr => {
+        const reservada = bloq.includes(dataStr);
+        const [d,m,y]   = dataStr.split('/').map(Number);
+        const dateObj   = new Date(y, m-1, d);
+        const isPast    = dateObj < hojeBase;
+        const diaSemana = DIAS_SEMANA_ADM[dateObj.getDay()];
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><b>${dataStr}</b>${isPast ? ' <span style="font-size:.72rem;color:var(--mid)">(passado)</span>' : ''}</td>
+          <td>${diaSemana}</td>
+          <td><span class="adm-badge ${reservada ? 'taken' : 'avail'}">${reservada ? 'Reservado' : 'Disponível'}</span></td>
+          <td>
+            <div class="adm-row-btns">
+              ${reservada
+                ? `<button class="adm-row-btn" data-acao="liberar" data-data="${dataStr}">Liberar</button>`
+                : `<button class="adm-row-btn" data-acao="bloquear" data-data="${dataStr}">Marcar reservado</button>`
+              }
+              <button class="adm-row-btn del" data-acao="excluir" data-data="${dataStr}">Excluir</button>
+            </div>
+          </td>`;
+        tbody.appendChild(tr);
+      });
+      tbody.querySelectorAll('[data-acao]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const acao = btn.dataset.acao, data = btn.dataset.data;
+          if (acao === 'bloquear') {
+            const b = getBloqueios(); if (!b.includes(data)) b.push(data); saveBloqueios(b);
+          } else if (acao === 'liberar') {
+            saveBloqueios(getBloqueios().filter(x => x !== data));
+          } else if (acao === 'excluir') {
+            if (!confirm(`Remover ${data} da agenda?`)) return;
+            saveDatas(getDatas().filter(x => x !== data));
+            saveBloqueios(getBloqueios().filter(x => x !== data));
+          }
+          renderAdminDatas(); renderAdminMetrics(); renderCal(); renderLista();
+        });
+      });
+    }
+
+    function renderAdminReservas() {
+      const reservas = getReservas();
+      const grid = document.getElementById('admReservasGrid');
+      grid.innerHTML = '';
+      if (!reservas.length) {
+        grid.innerHTML = '<p class="adm-empty">Nenhuma solicitação recebida ainda.</p>';
+        return;
+      }
+      [...reservas].reverse().forEach(r => {
+        const dt     = new Date(r.ts);
+        const quando = dt.toLocaleDateString('pt-BR') + ' às ' + dt.toLocaleTimeString('pt-BR', {hour:'2-digit',minute:'2-digit'});
+        const card   = document.createElement('div');
+        card.className = 'adm-reserva-card';
+        card.innerHTML = `
+          <div class="rc-data">📅 ${r.data}</div>
+          <div class="rc-info">
+            <b>${r.nome}</b><br>
+            <a href="https://wa.me/5522997757560'')}" target="_blank" style="color:var(--bronze)">${r.tel}</a><br>
+            ${r.tipo ? 'Evento: ' + r.tipo + '<br>' : ''}
+            ${r.conv ? 'Convidados: ' + r.conv : ''}
+          </div>
+          <div class="rc-ts">Solicitado em: ${quando}</div>`;
+        grid.appendChild(card);
+      });
+    }
+
+    // — Reveal —
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  
+    const sbBtn = document.getElementById('sb-upload-btn');
+    if (sbBtn) {
+      sbBtn.addEventListener('click', () => {
+        const bucket = document.getElementById('sb-bucket').value.trim() || 'site-images';
+        const path = document.getElementById('sb-path').value.trim() || 'admin/';
+        const file = document.getElementById('sb-file').files[0];
+        const result = document.getElementById('sb-result');
+        if (!file) { result.textContent = 'Selecione uma imagem primeiro.'; return; }
+        const filePath = `${path.replace(/\/$/, '')}/${file.name}`;
+        result.innerHTML = `Caminho no Supabase: <code>${bucket}/${filePath}</code><br>URL pública: <code>https://[project_id].supabase.co/storage/v1/object/public/${bucket}/${filePath}</code>`;
+      });
+    }
+
+  
+    const adminImagesPanel = document.getElementById('adminImagesPanel');
+    if (adminImagesPanel) adminImagesPanel.style.display = 'block';
+    const imgSave = document.getElementById('img-save');
+    const imgStatus = document.getElementById('img-status');
+    const imgUrl = document.getElementById('img-url');
+    const imgBucket = document.getElementById('img-bucket');
+    const imgFile = document.getElementById('img-file');
+    const imgAmbiente = document.getElementById('img-ambiente');
+    const openImagesAdmin = document.getElementById('openImagesAdmin');
+    const photoGenerate = document.getElementById('photo-generate');
+    const photoOutput = document.getElementById('photo-output');
+    const photoAmbiente = document.getElementById('photo-ambiente');
+    const photoFile = document.getElementById('photo-file');
+    const photoBucket = document.getElementById('photo-bucket');
+    const photoFolder = document.getElementById('photo-folder');
+    document.querySelectorAll('.tab').forEach(t => {
+      t.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+        t.classList.add('active');
+        const panel = t.dataset.tab;
+        if (adminImagesPanel) adminImagesPanel.style.display = panel === 'imagens' ? 'block' : 'none';
+      });
+    });
+    if (openImagesAdmin) { openImagesAdmin.addEventListener('click', () => { if (adminImagesPanel) adminImagesPanel.style.display = 'block'; document.querySelectorAll('.tab').forEach(x => x.classList.remove('active')); const it = [...document.querySelectorAll('.tab')].find(x => x.dataset.tab === 'imagens'); if (it) it.classList.add('active'); }); }
+
+    if (window.location.hash === '#admin') {
+      const p = document.querySelector('[data-panel=imagens]');
+      if (p) p.style.display = 'block';
+    }
+
+
+    if (photoGenerate) {
+      photoGenerate.addEventListener('click', () => {
+        const bucket = photoBucket.value.trim() || 'site-images';
+        const folder = photoFolder.value.trim() || 'ambientes';
+        const amb = photoAmbiente.value;
+        const file = photoFile.files[0];
+        const name = file ? file.name : 'foto.jpg';
+        const slug = amb.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
+        const path = `${folder.replace(/\/+$/,'')}/${slug}/${name}`;
+        const publicUrl = `https://[project_id].supabase.co/storage/v1/object/public/${bucket}/${path}`;
+        photoOutput.innerHTML = `Ambiente: <b>${amb}</b><br>Caminho: <code>${bucket}/${path}</code><br>URL pública: <code>${publicUrl}</code>`;
+      });
+    }
+
+    if (imgSave) {
+      imgSave.addEventListener('click', () => {
+        const bucket = imgBucket.value.trim() || 'site-images';
+        const file = imgFile.files[0];
+        const ambiente = imgAmbiente.value;
+        if (!file && !imgUrl.value.trim()) {
+          imgStatus.textContent = 'Selecione uma imagem ou cole uma URL.';
+          return;
+        }
+        const fileName = file ? file.name : 'imagem.jpg';
+        const path = `ambientes/${ambiente.replace(/\s+/g, '-').toLowerCase()}/${fileName}`;
+        const publicUrl = imgUrl.value.trim() || `https://[project_id].supabase.co/storage/v1/object/public/${bucket}/${path}`;
+        imgStatus.innerHTML = `Ambiente: <b>${ambiente}</b><br>Caminho Supabase: <code>${bucket}/${path}</code><br>URL: <code>${publicUrl}</code>`;
+      });
+    }
+
+  </script>
+</body>
+</html>
